@@ -1,7 +1,25 @@
 {
-  "student": {
+  "student1": {
     "id": 101,
     "name": "Tanishpreet Kaur",
+    "age": 21,
+    "email": "tanish@gmail.com",
+    "is_graduated": false,
+    "subjects": [
+      "Mathematics",
+      "Computer Science",
+      "Physics"
+    ],
+    "address": {
+      "street": "Sector-53",
+      "city": "Mohali",
+      "state": "Punjab",
+      "country": "India"
+    }
+  },
+  "student2": {
+    "id": 101,
+    "name": "tanish",
     "age": 21,
     "email": "tanish@gmail.com",
     "is_graduated": false,
