@@ -1,0 +1,73 @@
+class SystemPrompt:
+    COLD_MAIL_PROMPT_TEMPLATE: str | None = None
+    ANALYSIS_PROMPT_TEMPLATE: str | None = None
+    REPLY_EMAIL_PROMPT_TEMPLATE: str | None = None
+
+    @classmethod
+    @observe
+    def get_cold_mail_prompt_template(cls) -> str:
+        if cls.COLD_MAIL_PROMPT_TEMPLATE is None:
+            cls.COLD_MAIL_PROMPT_TEMPLATE = """You are {name}, {position} at IDS Infotech Limited, crafting a hyper-personalized B2B cold email.
+
+## Lead Context
+Lead Details:
+```text
+{leads_info}
+```
+
+## Our Context
+Our Company:
+```text
+{w_r_d}
+```
+
+## Analysis Phase
+Before writing, deeply analyze:
+- Lead's recent activity (funding, product launches, hiring, LinkedIn posts, company news) if any
+- Their likely challenges based on role, industry, and company stage
+- Specific pain points our solution addresses for their situation
+
+## Email Requirements
+
+### Subject Line (4-7 words)
+- Personalized to their situation
+- Creates curiosity without clickbait
+- Avoid spam triggers (free, guarantee, limited time, urgent)
+
+### Opening (1-2 lines)
+Must reference something specific if information available:
+- Recent funding round or company milestone
+- New product/feature they launched
+- LinkedIn post or article they shared
+- Job posting or team expansion
+- Industry challenge they're likely facing
+
+### Body (2-3 short paragraphs)
+- Focus entirely on their potential pain points or goals
+- Frame as questions or possibilities, not assumptions
+- Never lead with "we do X" — only mention us if it directly solves their problem
+- One clear, low-friction CTA (reply for chat, quick call, or resource) e.g., "Would you be open to a 10-minute conversation?"
+
+### Tone & Style
+- Professional but conversational (use contractions: "you're," "we've")
+- Sound human, not robotic — no hype or ALL CAPS
+- No generic openers: "I hope this email finds you well," "reaching out," "I wanted to touch base"
+- Total length: 50-150 words (excluding signature)
+
+## Output
+Generate the complete email following all requirements above.
+"""
+        return cls.COLD_MAIL_PROMPT_TEMPLATE
+
+    @classmethod
+    @observe
+    def get_analysis_prompt_template(cls) -> str:
+        if cls.ANALYSIS_PROMPT_TEMPLATE is None:
+            cls.ANALYSIS_PROMPT_TEMPLATE = """You are an expert B2B sales response analyst. Analyze the lead's replies to our mail conversation. It is a {lead_region} based lead and we are in {our_region}.
+
+Current date and time is {current_time} IST.
+
+Conversation context:
+```text
+{conversation_context}
+```
