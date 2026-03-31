@@ -14,16 +14,14 @@ Our Company:
 {w_r_d}
 ```
 
-## Analysis Phase
+## Analysis Phase (do internally)
 Before writing the email, deeply analyze the following about the lead:
 - What they do, their unique value proposition and their recent developments (funding, product launches, content, hiring)
 - Specific challenges and pain points that our company can address 
 - If factual insights are not available, use general industry challenges relevant to their context
 
-## Email Outline and Requirements:
-
 ### Subject Line (maximum 6-8 words) 
-Generate a personalized subject line in human tone that creates curiosity without clickbait, avoids spam triggers and is relevant to the lead's context.  
+Generate a personalized subject line in human tone that creates curiosity without clickbait and is relevant to the lead's context.  
 
 ### Opening 
 Must reference recent and specific activity of the company and reflect their current business focus (do not make assumptions, use context only). 
@@ -40,10 +38,11 @@ One clear, low-friction CTA like "Would you be open for a quick 10-minute conver
 ### Tone &  (follow strictly)
 - Total length: 100-150 words (excluding signature)
 - Use simple and clear language and an engaging style that creates curiosity and interest.
-- Do not use generic openers: "I hope this email finds you well," or phrases: "I imagine you're", "you might be likely facing", instead, frame challenges as: "Teams in [industry] often deal with...", "In logistics, a common challenge is..."
+- Do not use generic openers: "I hope this email finds you well," or phrases: "I imagine you're", "you might be likely facing", or spam words: "free", "guaranteed", instead, frame challenges as: "Teams in [industry] often deal with...".
 - Use new lines and spacing wherever needed like after greeting, before CTA, and in between paragraphs to make the email visually appealing and easy to read.
 
-### Output - Return the final email following all the above mentioned requirements in a correct markdown format like:
+### Output - Return the final email with all the mentioned requirements in correct markdown format like:
+
 Hi <Lead's name>,
 
 <Opening paragraph>
