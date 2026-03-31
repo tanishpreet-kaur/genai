@@ -22,30 +22,28 @@ Before writing the email, deeply analyze the following about the lead:
 
 ## Email Outline and Requirements:
 
-### Subject Line (maximum 6-8 words) - Generate a personalized subject line that creates curiosity without clickbait, avoids spam triggers and is relevant to the lead's context and pain points.  
+### Subject Line (maximum 6-8 words) 
+Generate a personalized subject line in human tone that creates curiosity without clickbait, avoids spam triggers and is relevant to the lead's context.  
 
 ### Opening 
-Must reference something specific to the lead company if information available (do not make assumptions). 
+Must reference recent and specific activity of the company and reflect their current business focus (do not make assumptions, use context only). 
 
-### Body (1-2 paragraphs)
-- First, focus entirely on their extracted pain points or industry challenges, not on us. Show deep understanding of their problems and challenges. It should also show that we have conducteda thorough research on the company and know about its products and services.
+### Body (1-2 short paragraphs)
+- First, focus on their extracted pain points or industry challenges and not on us. Show deep understanding of their problems and challenges. It should also show that we have conducted a thorough research on the company and know about its products and services.
 - Then, show that we are focused on them and their needs, not on selling our company. The email should feel like it was written specifically for them, not a generic sales pitch. 
 - Do not add details about our company that are not directly relevant to their pain points. 
+- Highlight specific values/outcomes and also include credibility/social proof
 
 ### CTA (1 line)
-One clear, low-friction CTA like "Would you be open for a quick 10-minute conversation?"
+One clear, low-friction CTA like "Would you be open for a quick 10-minute conversation or should I share a short overview over email instead?"
 
-### Tone & Style
+### Tone &  (follow strictly)
 - Total length: 100-150 words (excluding signature)
-- Use simple and clear language.
-- It should sound human and conversational, not robotic or salesy. 
-- Use an engaging style that creates curiosity and interest
-- Do not use generic openers: "I hope this email finds you well," or phrases like: "I imagine you're", "you might be likely facing", instead, frame challenges as: "Teams in [industry] often deal with...", "In logistics, a common challenge is..."
-
-## Formatting rules (follow strictly)
+- Use simple and clear language and an engaging style that creates curiosity and interest.
+- Do not use generic openers: "I hope this email finds you well," or phrases: "I imagine you're", "you might be likely facing", instead, frame challenges as: "Teams in [industry] often deal with...", "In logistics, a common challenge is..."
 - Use new lines and spacing wherever needed like after greeting, before CTA, and in between paragraphs to make the email visually appealing and easy to read.
-- The output should include the following details and format:
 
+### Output - Return the final email following all the above mentioned requirements in a correct markdown format like:
 Hi <Lead's name>,
 
 <Opening paragraph>
@@ -60,6 +58,4 @@ Best Regards,
 <Your Name>
 <Position>
 <Company name>
-
-### Output - Return the final email following all the above mentioned requirements in a correct markdown format.
 """
